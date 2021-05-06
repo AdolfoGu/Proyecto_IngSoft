@@ -3,7 +3,7 @@ CREATE DATABASE futbol;
 USE futbol;
 
 CREATE OR REPLACE TABLE usuarios(
-id_usuario INT NOT NULL PRIMARY KEY,
+id_usuario INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 nombre VARCHAR (50),
 apellido VARCHAR (50),
 nickname VARCHAR (50),
@@ -37,3 +37,9 @@ id_equipo INT NOT NULL,
 FOREIGN KEY (id_usuario) REFERENCES usuarios (id_usuario),
 FOREIGN KEY (id_equipo) REFERENCES equipos (id_equipo)
 );
+
+SELECT * FROM usuarios;
+
+INSERT INTO usuarios VALUES (NULL ,"Adolfo", "Gutierrez", "Admin", "12345");
+
+DROP DATABASE futbol;
