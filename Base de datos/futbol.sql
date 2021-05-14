@@ -38,7 +38,7 @@ FOREIGN KEY (id_usuario) REFERENCES usuarios (id_usuario),
 FOREIGN KEY (id_equipo) REFERENCES equipos (id_equipo)
 );
 
-CREATE OR RPLACE TABLE resultado(
+CREATE OR REPLACE TABLE resultado(
   id_resultado INT NOT NULL PRIMARY KEY,
   id_equipo INT NOT NULL,
   id_liga INT NOT NULL,
