@@ -37,3 +37,14 @@ id_equipo INT NOT NULL,
 FOREIGN KEY (id_usuario) REFERENCES usuarios (id_usuario),
 FOREIGN KEY (id_equipo) REFERENCES equipos (id_equipo)
 );
+
+CREATE OR RPLACE TABLE resultado(
+  id_resultado INT NOT NULL PRIMARY KEY,
+  id_equipo INT NOT NULL,
+  id_liga INT NOT NULL,
+  resultado_ganador INT NOT NULL,
+  resultado_empate INT NOT NULL,
+  resultado_perdedor INT NOT NULL,
+  FOREIGN KEY (id_resultado) REFERENCES equipos (id_equipo),
+  FOREIGN KEY (id_liga) REFERENCES ligas (id_liga)
+  );
