@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    include 'conexion_be.php';
+    $conexion = mysqli_connect("localhost", "root", "", "futbol");
 
     $nick = $_POST['usuario'];
     $contra = $_POST['contra'];
@@ -12,7 +12,7 @@
 
     if(mysqli_num_rows($validar_login) > 0){
         $_SESSION['usuario'] = $nick;
-        header("location: ../dashboard.php");
+        header("location: ../views/administrador/dashboard.php");
         exit();
     }else{
         echo'

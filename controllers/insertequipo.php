@@ -5,7 +5,7 @@
 	function NuevoEquipo($file1, $abreviatura,$nombre,$jg,$jp,$je,$jj,$gf,$gc,$puntos)
 	{
 		$nombre_archivo=$_FILES['file1']['name'];
-		$ruta="logos/".$nombre_archivo;
+		$ruta="../../images/".$nombre_archivo;
 		$archivo=$_FILES['file1']['tmp_name'];
 
 		$subir=move_uploaded_file($archivo,$ruta);
@@ -19,5 +19,5 @@
 
 <script type="text/javascript">
 	alert("Equipo Registrado exitosamente");
-	window.location.href='dashboard.php';
+	window.location.href='../views/administrador/dashboard.php';
 </script>
