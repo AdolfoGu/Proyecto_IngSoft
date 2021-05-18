@@ -36,7 +36,7 @@
             </div>
             <div class="contenedor__login-register">
                 <!---Formulario Login-->
-                <form action="php/login_usuario_be.php" method="POST" class="formulario__login">
+                <form action="models/login_usuario_be.php" method="POST" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
                     <input type="text" placeholder="Usuario" name="usuario">
                     <input type="password" placeholder="Contraseña" name = "contra">
