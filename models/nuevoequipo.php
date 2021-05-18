@@ -34,7 +34,7 @@
                 <img  src="../images/Guardianes2020.png" class="thumbnail" width="700" height="500">
             </div>
 
-            <form action="../controllers/insertequipo.php" class="form-horizontal" method="POST" enctype="multipart/form-data">
+            <form action="../controllers/inserts/insertequipo.php" class="form-horizontal" method="POST" enctype="multipart/form-data">
                 <div class="col-md-5">
                     <label  class="col-sm-2 control-label">Abreviatura: </label>
                     <div class="col-sm-10">
@@ -106,7 +106,7 @@
                 </div>
                 <br><br>
                 <button type="submit" class="btn btn-success">Guardar</button>
-                <a href="../views/administrador/dashboard.php"><button type='button' class='btn btn-danger'>Cancelar</button></a>
+                <a href="../../views/administrador/dashboard.php"><button type='button' class='btn btn-danger'>Cancelar</button></a>
             </form>
         </div>
     </div>

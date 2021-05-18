@@ -19,5 +19,5 @@
 
 <script type="text/javascript">
 	alert("Equipo Registrado exitosamente");
-	window.location.href='../views/administrador/dashboard.php';
+	window.location.href='../../views/administrador/dashboard.php';
 </script>
