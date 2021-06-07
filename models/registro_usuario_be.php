@@ -1,17 +1,16 @@
 <?php 
-    include 'conexion_be.php';
+    $conexion = mysqli_connect("localhost", "root", "", "futbol");
 
     $nombre = $_POST['nombre'];
-    $apellido_pa = $_POST['apellido_paterno'];
-    $apellido_ma = $_POST['apellido_materno'];
+    $apellido = $_POST['apellido'];
     $nombre_usuario = $_POST['nick'];
     $contra = $_POST['contra'];
 
-    $query = "INSERT INTO usuarios(nombre, apellido_paterno, apellido_materno,  nickname, contra) 
-              VALUES (' $nombre', '$apellido_pa', '$apellido_ma', '$nombre_usuario', '$contra')";
+    $query = "INSERT INTO usuario(nombre, apellido, nickname, contraseña, rol) 
+              VALUES (' $nombre', '$apellido', '$nombre_usuario', '$contra', 'usua')";
 
     //Verificación de usuario
-    $verific = "SELECT * FROM usuarios WHERE nickname='$nombre_usuario'";
+    $verific = "SELECT * FROM usuario WHERE nickname='$nombre_usuario'";
     $verificar_usuario = mysqli_query($conexion, $verific);
     if(mysqli_num_rows($verificar_usuario) > 0){
         echo '
