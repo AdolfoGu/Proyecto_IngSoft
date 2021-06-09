@@ -10,6 +10,8 @@
 
 		 $sentencia1="INSERT INTO resultados (home, visitante, liga, gol_home, gol_visitante, jornada) 
 		 VALUES ('".$local."', '".$visitante."', 'Liga BBVA', NULL , NULL, '".$jornada."')";
+		  $conexion = mysqli_connect("localhost", "root", "", "futbol");
+		  mysqli_query($conexion, $sentencia1) or die (mysqli_error($conexion));
 	}
 ?>
 

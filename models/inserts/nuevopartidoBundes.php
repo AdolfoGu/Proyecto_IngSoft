@@ -68,16 +68,12 @@
                     </div>
                     <br><br><br>
                 </div>
-<<<<<<< HEAD
                 <div class="col-md-5">
                     <label  class="col-sm-2 control-label">Jornada: </label>
                     <div class="col-sm-10">
                         <input type="text" id="jornada" name="jornada" size="25" class="form-control form-control-sm"><br>
                     </div>
                 </div>
-=======
-
->>>>>>> d50bf4a57c41c327e22c6f94b2017e38e18eef64
                 <div class="col-md-5">
                     <label  class="col-sm-2 control-label">Fecha: </label>
                     <div class="col-sm-10">
