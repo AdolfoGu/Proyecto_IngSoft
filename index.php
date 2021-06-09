@@ -1,7 +1,7 @@
 <?php 
     session_start();
     if(isset($_SESSION['usuario'])){
-        header("location: dashboard.php");
+        header("location: views/administrador/dashboard.php");
     }
 ?>
 <!DOCTYPE html>
@@ -43,11 +43,10 @@
                     <button>Entrar</button>
                 </form>
                 <!---Formulario Registro-->
-                <form action="php/registro_usuario_be.php" method="POST" class="formulario__register">
+                <form action="models/registro_usuario_be.php" method="POST" class="formulario__register">
                     <h2>Registrarse</h2>
                     <input type="text" placeholder="Nombre" name="nombre">
-                    <input type="text" placeholder="Apellido Paterno" name="apellido_paterno">
-                    <input type="text" placeholder="Apellido Materno" name="apellido_materno">
+                    <input type="text" placeholder="Apellido" name="apellido">
                     <input type="text" placeholder="Nombre de Usuaro" name="nick">
                     <input type="password" placeholder="Contraseña" name="contra">
                     <button>Registrarse</button>
