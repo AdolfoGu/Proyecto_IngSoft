@@ -46,18 +46,11 @@
 </head>
 <body>
 
-<nav class="menu">
-        <a class="logo" href="">Score Direct</label></a>      
-        <ul class="menu_items">
-            <li><a href="../../models/cerrar_sesion.php">Cerrar sesión</a></li>
-        </ul>
-</nav>
 <br>
 <div class="panel panel-primary"  align="center" style="padding:1.5%">
         <div class="panel-heading" style="white: black; font-weight:bold; font-size:35px;padding: 0px 80px;">
             Editar Equipo Liga BBVA
         </div>
-</div>
 
 <div class="panel-body">
     <div class="row">

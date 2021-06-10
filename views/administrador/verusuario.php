@@ -33,7 +33,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipos</title>
+    <title>Usuarios</title>
     <link rel="stylesheet" href="../../assets/ccs/bootstrap.css">
     <link rel="stylesheet" href="../../assets/ccs/estilosmenu.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -41,25 +41,18 @@
     <title>Usario</title>
 </head>
 <body>
-
-<nav class="menu">
-        <a class="logo" href="">Score Direct</label></a>      
-        <ul class="menu_items">
-            <li><a href="../../models/cerrar_sesion.php">Cerrar sesión</a></li>
-        </ul>
-</nav>
 <br>
 <div class="panel panel-primary"  align="center" style="padding:1.5%">
         <div class="panel-heading" style="white: black; font-weight:bold; font-size:35px;padding: 0px 80px;">
             Usuario
         </div>
-</div>
 
 <div class="panel-body">
 
         <form action="../../controllers/updates/updateequipoBBVA.php" method="POST" enctype="multipart/form-data" class="form-horizontal">
             <div class="col-md-7">
-                <img  src="../../images/usuario.png" class="thumbnail" width='350' >
+            <br><br>
+                <img  src="../../images/usuario.png" class="thumbnail" width='400' >
             </div>
 
             <div class="col-md-5">
